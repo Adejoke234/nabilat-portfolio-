@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -7,60 +7,98 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- HERO -->
   <header class="hero">
     <nav class="navbar">
       <h2 class="logo">Nabilat</h2>
-
       <div class="menu-toggle" id="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </div>
-
       <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
     <div class="hero-content fade-in">
-      <h1>Hello, I'm Nabilat</h1>
-      <p>
-        A frontend developer building clean, responsive, and user-friendly websites.
-      </p>
+      <h1>Hello, I'm Nabilat </h1>
+      <p class="subtitle">A Frontend Developer building clean, responsive, and user-friendly websites.</p>
+      <p class="tagline">React.js &nbsp;·&nbsp; JavaScript &nbsp;·&nbsp; HTML &nbsp;·&nbsp; CSS</p>
       <a href="#projects" class="btn">View My Work</a>
     </div>
   </header>
 
+  <!-- ABOUT -->
   <section id="about" class="section fade-in">
     <h2>About Me</h2>
     <p>
-      I am a beginner frontend developer passionate about building modern and
-      responsive websites using HTML, CSS, and JavaScript. I am continuously
-      learning and improving my skills to create better user experiences.
+      I am a final-year Software Engineering student at Osun State University with hands-on experience
+      in frontend development through three internships. I am passionate about building modern,
+      responsive websites and continuously improving my skills to deliver better user experiences.
     </p>
-  </section>
-
-  <section id="skills" class="section light fade-in">
-    <h2>My Skills</h2>
-    <div class="cards">
-      <div class="card">HTML</div>
-      <div class="card">CSS</div>
-      <div class="card">JavaScript</div>
-      <div class="card">Responsive Design</div>
+    <div class="about-highlights">
+      <div class="highlight-box">
+        <h3>3</h3>
+        <p>Internships Completed</p>
+      </div>
+      <div class="highlight-box">
+        <h3>2026</h3>
+        <p>BSc Graduating</p>
+      </div>
+      <div class="highlight-box">
+        <h3>React</h3>
+        <p>Primary Framework</p>
+      </div>
     </div>
   </section>
 
-  <section id="projects" class="section fade-in">
+  <!-- SKILLS -->
+  <section id="skills" class="section light fade-in">
+    <h2>My Skills</h2>
+    <div class="cards">
+      <div class="card">HTML5</div>
+      <div class="card">CSS3</div>
+      <div class="card">JavaScript</div>
+      <div class="card">React.js</div>
+      <div class="card">Responsive Design</div>
+      <div class="card">Git & GitHub</div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section fade-in">
+    <h2>Work Experience</h2>
+    <div class="experience-list">
+      <div class="exp-item">
+        <h3>Software Engineering Intern (SIWES)</h3>
+        <p class="exp-company">Data Quotient Technology</p>
+        <p class="exp-duration">2025 &nbsp;·&nbsp; 6 months</p>
+      </div>
+      <div class="exp-item">
+        <h3>Frontend Developer Intern</h3>
+        <p class="exp-company">Tripledot Technology</p>
+        <p class="exp-duration">2024 &nbsp;·&nbsp; 6 weeks</p>
+      </div>
+      <div class="exp-item">
+        <h3>Software Developer Intern</h3>
+        <p class="exp-company">Madros Technology</p>
+        <p class="exp-duration">2023 &nbsp;·&nbsp; 3 months</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section light fade-in">
     <h2>Projects</h2>
     <div class="project-grid">
       <div class="project-card">
         <h3>Landing Page</h3>
         <p>A simple responsive landing page built with HTML and CSS.</p>
         <div class="project-buttons">
-          <a href="#" class="project-btn">View Project</a>
           <a href="https://github.com/Adejoke234/landing-page" target="_blank" class="project-btn secondary-btn">GitHub</a>
         </div>
       </div>
@@ -69,30 +107,26 @@
         <h3>Portfolio Website</h3>
         <p>A personal portfolio website to showcase my skills and projects.</p>
         <div class="project-buttons">
-          <a href="#" class="project-btn">View Project</a>
-          <a href="https://github.com/Adejoke234" target="_blank" class="project-btn secondary-btn">GitHub</a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <h3>Coming Soon</h3>
-        <p>More frontend projects will be added here as I continue learning.</p>
-        <div class="project-buttons">
-          <a href="#" class="project-btn">View Project</a>
+          <a href="https://adejoke234.github.io/nabilat-portfolio-/" target="_blank" class="project-btn">Live Site</a>
           <a href="https://github.com/Adejoke234" target="_blank" class="project-btn secondary-btn">GitHub</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section light fade-in">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:nabilatajoke@gmail.com">nabilatajoke@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/Adejoke234" target="_blank">github.com/Adejoke234</a></p>
+  <!-- CONTACT -->
+  <section id="contact" class="section fade-in">
+    <h2>Contact Me</h2>
+    <p>I'm open to frontend roles, internships, and collaborations. Feel free to reach out!</p>
+    <div class="contact-links">
+      <a href="mailto:nabilatajoke@gmail.com"> nabilatajoke@gmail.com</a>
+      <a href="https://github.com/Adejoke234" target="_blank"> github.com/Adejoke234</a>
+      <a href="https://www.linkedin.com/in/nabilat-salawudeen" target="_blank"> LinkedIn: Nabilat Salawudeen</a>
+    </div>
   </section>
 
   <footer class="footer">
-    <p>© 2026 Nabilat. All rights reserved.</p>
+    <p>© 2026 Nabilat Salawudeen. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
