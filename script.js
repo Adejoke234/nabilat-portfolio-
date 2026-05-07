@@ -1,25 +1,27 @@
-const menuToggle = document.getElementById("menu-toggle");
-const navLinks = document.getElementById("nav-links");
+// Mobile menu toggle
+const toggle = document.getElementById('menu-toggle');
+const navLinks = document.getElementById('nav-links');
 
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
+toggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
 });
 
-const faders = document.querySelectorAll(".fade-in");
-
-const appearOnScroll = new IntersectionObserver(
-  function (entries, observer) {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add("show");
-      observer.unobserve(entry.target);
-    });
-  },
-  {
-    threshold: 0.2,
-  }
-);
-
-faders.forEach((fader) => {
-  appearOnScroll.observe(fader);
+// Close menu when a nav link is clicked
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+  });
 });
+
+// Fade in sections on scroll
+const faders = document.querySelectorAll('.fade-in');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, { threshold: 0.1 });
+
+faders.forEach(el => observer.observe(el));
