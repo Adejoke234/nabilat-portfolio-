@@ -1,21 +1,23 @@
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nabilat | Frontend Developer</title>
+  <title>Nabilat Salawudeen | Junior Frontend Developer</title>
+  <meta name="description" content="Nabilat Salawudeen is a Junior Frontend Developer building responsive, user-friendly websites with React.js, JavaScript, HTML5 and CSS3. View projects, experience and contact details." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <!-- HERO -->
   <header class="hero">
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
       <h2 class="logo">Nabilat</h2>
-      <div class="menu-toggle" id="menu-toggle">
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
-      </div>
+      </button>
       <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -26,20 +28,32 @@
     </nav>
 
     <div class="hero-content fade-in">
-      <h1>Hello, I'm Nabilat </h1>
-      <p class="subtitle">A Frontend Developer building clean, responsive, and user-friendly websites.</p>
-      <p class="tagline">React.js &nbsp;·&nbsp; JavaScript &nbsp;·&nbsp; HTML &nbsp;·&nbsp; CSS</p>
-      <a href="#projects" class="btn">View My Work</a>
+      <h1>Hi, I'm Nabilat Salawudeen</h1>
+      <p class="subtitle">Junior Frontend Developer</p>
+      <p class="tagline">React.js &nbsp;·&nbsp; JavaScript &nbsp;·&nbsp; HTML5 &nbsp;·&nbsp; CSS3</p>
+      <p class="hero-description">
+        Final-year Software Engineering student who builds clean, responsive, and user-friendly
+        web interfaces. I'm looking for Junior Frontend Developer / React Developer opportunities,
+        including remote roles, where I can keep growing and contribute to real-world products.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="assets/cv/Nabilat-Salawudeen-CV.pdf" class="btn secondary-btn" target="_blank" rel="noopener">Download CV</a>
+      </div>
     </div>
   </header>
+
+  <main id="main-content">
 
   <!-- ABOUT -->
   <section id="about" class="section fade-in">
     <h2>About Me</h2>
     <p>
-      I am a final-year Software Engineering student at Osun State University with hands-on experience
-      in frontend development through three internships. I am passionate about building modern,
-      responsive websites and continuously improving my skills to deliver better user experiences.
+      I'm a final-year Software Engineering student at Osun State University with hands-on experience
+      gained through three internships, where I worked on frontend development tasks using HTML, CSS,
+      JavaScript and React.js. I enjoy turning designs into responsive, accessible interfaces and
+      paying close attention to detail and usability. I'm continuously learning and looking for a
+      Junior Frontend Developer role where I can apply what I've learned and keep growing as a developer.
     </p>
     <div class="about-highlights">
       <div class="highlight-box">
@@ -60,13 +74,31 @@
   <!-- SKILLS -->
   <section id="skills" class="section light fade-in">
     <h2>My Skills</h2>
-    <div class="cards">
-      <div class="card">HTML5</div>
-      <div class="card">CSS3</div>
-      <div class="card">JavaScript</div>
-      <div class="card">React.js</div>
-      <div class="card">Responsive Design</div>
-      <div class="card">Git & GitHub</div>
+
+    <div class="skills-category">
+      <h3>Frontend</h3>
+      <div class="cards">
+        <div class="card">HTML5</div>
+        <div class="card">CSS3</div>
+        <div class="card">JavaScript</div>
+        <div class="card">React.js</div>
+        <div class="card">Responsive Web Design</div>
+      </div>
+    </div>
+
+    <div class="skills-category">
+      <h3>Tools</h3>
+      <div class="cards">
+        <div class="card">Git</div>
+        <div class="card">GitHub</div>
+      </div>
+    </div>
+
+    <div class="skills-category">
+      <h3>Other</h3>
+      <div class="cards">
+        <div class="card">REST APIs</div>
+      </div>
     </div>
   </section>
 
@@ -78,16 +110,25 @@
         <h3>Software Engineering Intern (SIWES)</h3>
         <p class="exp-company">Data Quotient Technology</p>
         <p class="exp-duration">2025 &nbsp;·&nbsp; 6 months</p>
+        <ul class="exp-details">
+          <li>[Add 2–3 specific responsibilities or achievements from this internship]</li>
+        </ul>
       </div>
       <div class="exp-item">
         <h3>Frontend Developer Intern</h3>
         <p class="exp-company">Tripledot Technology</p>
         <p class="exp-duration">2024 &nbsp;·&nbsp; 6 weeks</p>
+        <ul class="exp-details">
+          <li>[Add 2–3 specific responsibilities or achievements from this internship]</li>
+        </ul>
       </div>
       <div class="exp-item">
         <h3>Software Developer Intern</h3>
         <p class="exp-company">Madros Technology</p>
         <p class="exp-duration">2023 &nbsp;·&nbsp; 3 months</p>
+        <ul class="exp-details">
+          <li>[Add 2–3 specific responsibilities or achievements from this internship]</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -96,38 +137,57 @@
   <section id="projects" class="section light fade-in">
     <h2>Projects</h2>
     <div class="project-grid">
+
       <div class="project-card">
-        <h3>Landing Page</h3>
-        <p>A simple responsive landing page built with HTML and CSS.</p>
+        <h3>Plagiarism Detection System</h3>
+        <p>
+          Final-year project focused on detecting similarities in Python source code, including
+          obfuscated code, using NLP techniques and Abstract Syntax Tree (AST) analysis.
+        </p>
+        <p class="project-tech">React.js &nbsp;·&nbsp; Python &nbsp;·&nbsp; Flask &nbsp;·&nbsp; NLP &nbsp;·&nbsp; AST</p>
         <div class="project-buttons">
-          <a href="https://github.com/Adejoke234/landing-page" target="_blank" class="project-btn secondary-btn">GitHub</a>
+          <span class="project-note">Links coming soon</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Responsive Landing Page</h3>
+        <p>A simple responsive landing page built with HTML and CSS.</p>
+        <p class="project-tech">HTML5 &nbsp;·&nbsp; CSS3</p>
+        <div class="project-buttons">
+          <a href="https://github.com/Adejoke234/landing-page" target="_blank" rel="noopener" class="project-btn secondary-btn">GitHub</a>
         </div>
       </div>
 
       <div class="project-card">
         <h3>Portfolio Website</h3>
-        <p>A personal portfolio website to showcase my skills and projects.</p>
+        <p>This personal portfolio website, built to showcase my skills, experience and projects.</p>
+        <p class="project-tech">HTML5 &nbsp;·&nbsp; CSS3 &nbsp;·&nbsp; JavaScript</p>
         <div class="project-buttons">
-          <a href="https://adejoke234.github.io/nabilat-portfolio-/" target="_blank" class="project-btn">Live Site</a>
-          <a href="https://github.com/Adejoke234" target="_blank" class="project-btn secondary-btn">GitHub</a>
+          <a href="https://adejoke234.github.io/nabilat-portfolio-/" target="_blank" rel="noopener" class="project-btn">Live Site</a>
+          <a href="https://github.com/Adejoke234/nabilat-portfolio-" target="_blank" rel="noopener" class="project-btn secondary-btn">GitHub</a>
         </div>
       </div>
+
     </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact" class="section fade-in">
     <h2>Contact Me</h2>
-    <p>I'm open to frontend roles, internships, and collaborations. Feel free to reach out!</p>
+    <p>I'm open to Junior Frontend Developer, React Developer and remote opportunities. Feel free to reach out!</p>
     <div class="contact-links">
-      <a href="mailto:nabilatajoke@gmail.com"> nabilatajoke@gmail.com</a>
-      <a href="https://github.com/Adejoke234" target="_blank"> github.com/Adejoke234</a>
-      <a href="https://www.linkedin.com/in/nabilat-salawudeen" target="_blank"> LinkedIn: Nabilat Salawudeen</a>
+      <a href="mailto:nabilatajoke@gmail.com">nabilatajoke@gmail.com</a>
+      <a href="tel:+2349065357814">+234 906 535 7814</a>
+      <a href="https://github.com/Adejoke234" target="_blank" rel="noopener">github.com/Adejoke234</a>
+      <a href="https://www.linkedin.com/in/nabilat-salawudeen" target="_blank" rel="noopener">LinkedIn: Nabilat Salawudeen</a>
     </div>
   </section>
 
+  </main>
+
   <footer class="footer">
-    <p>© 2026 Nabilat Salawudeen. All rights reserved.</p>
+    <p>&copy; 2026 Nabilat Salawudeen. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
