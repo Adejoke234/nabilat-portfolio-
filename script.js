@@ -3,13 +3,15 @@ const toggle = document.getElementById('menu-toggle');
 const navLinks = document.getElementById('nav-links');
 
 toggle.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+  const isOpen = navLinks.classList.toggle('active');
+  toggle.setAttribute('aria-expanded', isOpen);
 });
 
 // Close menu when a nav link is clicked
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('active');
+    toggle.setAttribute('aria-expanded', 'false');
   });
 });
 
