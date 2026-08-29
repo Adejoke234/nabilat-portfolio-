@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nabilat Salawudeen | Junior Frontend Developer</title>
-  <meta name="description" content="Nabilat Salawudeen is a Junior Frontend Developer and 2026 Software Engineering graduate building responsive, user-friendly websites with React.js, JavaScript, HTML5 and CSS3. View projects, experience and contact details." />
+  <meta name="description" content="Nabilat Salawudeen is a Junior Frontend Developer and 2026 Software Engineering graduate specializing in React.js, JavaScript and responsive web development. View code samples, projects, experience and contact details." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -19,6 +19,7 @@
       <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#code">Code</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -97,6 +98,101 @@
       <h3>Other</h3>
       <div class="cards">
         <div class="card">REST APIs</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CODE & TECHNICAL SKILLS -->
+  <section id="code" class="section fade-in">
+    <h2>Code &amp; Technical Skills</h2>
+    <p>A closer look at how I write code, not just the tools I list.</p>
+
+    <div class="code-grid">
+      <div class="code-card">
+        <div class="code-card-header">
+          <h3>Semantic HTML</h3>
+          <span class="tech-label">HTML5</span>
+        </div>
+        <p class="code-explanation">Building structured, accessible page layouts using semantic HTML5 elements.</p>
+        <div class="code-block-wrapper">
+          <pre class="code-block"><code>&lt;header&gt;
+  &lt;nav&gt;
+    &lt;a href="/"&gt;Home&lt;/a&gt;
+    &lt;a href="/projects"&gt;Projects&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;</code></pre>
+          <button class="copy-btn" type="button">Copy Code</button>
+        </div>
+      </div>
+
+      <div class="code-card">
+        <div class="code-card-header">
+          <h3>Responsive CSS</h3>
+          <span class="tech-label">CSS3</span>
+        </div>
+        <p class="code-explanation">Creating responsive layouts that adapt smoothly across desktop, tablet and mobile devices.</p>
+        <div class="code-block-wrapper">
+          <pre class="code-block"><code>.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}</code></pre>
+          <button class="copy-btn" type="button">Copy Code</button>
+        </div>
+      </div>
+
+      <div class="code-card">
+        <div class="code-card-header">
+          <h3>JavaScript DOM Interaction</h3>
+          <span class="tech-label">JavaScript</span>
+        </div>
+        <p class="code-explanation">Using JavaScript to create interactive and dynamic user interfaces.</p>
+        <div class="code-block-wrapper">
+          <pre class="code-block"><code>const button = document.querySelector("#menu-button");
+
+button.addEventListener("click", () => {
+  document.querySelector("#menu").classList.toggle("active");
+});</code></pre>
+          <button class="copy-btn" type="button">Copy Code</button>
+        </div>
+      </div>
+
+      <div class="code-card">
+        <div class="code-card-header">
+          <h3>React Component</h3>
+          <span class="tech-label">React.js</span>
+        </div>
+        <p class="code-explanation">Building reusable React components for scalable and maintainable user interfaces.</p>
+        <div class="code-block-wrapper">
+          <pre class="code-block"><code>function ProjectCard({ title, description }) {
+  return (
+    &lt;article className="project-card"&gt;
+      &lt;h3&gt;{title}&lt;/h3&gt;
+      &lt;p&gt;{description}&lt;/p&gt;
+    &lt;/article&gt;
+  );
+}</code></pre>
+          <button class="copy-btn" type="button">Copy Code</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="what-i-build">
+      <h3>What I Can Build</h3>
+      <div class="build-cards">
+        <div class="build-card">Responsive websites</div>
+        <div class="build-card">Landing pages</div>
+        <div class="build-card">Portfolio websites</div>
+        <div class="build-card">Interactive web interfaces</div>
+        <div class="build-card">Reusable React components</div>
+        <div class="build-card">API-based frontend interfaces</div>
+        <div class="build-card">Mobile-friendly layouts</div>
       </div>
     </div>
   </section>
