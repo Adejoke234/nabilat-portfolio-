@@ -27,3 +27,28 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 faders.forEach(el => observer.observe(el));
+
+// Copy Code buttons
+document.querySelectorAll('.copy-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const wrapper = btn.closest('.code-block-wrapper');
+    const codeEl = wrapper.querySelector('.code-block code');
+    const codeText = codeEl.textContent;
+
+    navigator.clipboard.writeText(codeText).then(() => {
+      const originalText = btn.textContent;
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.classList.remove('copied');
+      }, 2000);
+    }).catch(() => {
+      btn.textContent = 'Copy failed';
+      setTimeout(() => {
+        btn.textContent = 'Copy Code';
+      }, 2000);
+    });
+  });
+});
