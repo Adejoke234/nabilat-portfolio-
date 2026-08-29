@@ -19,7 +19,6 @@
       <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#code">Code</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -71,81 +70,152 @@
     </div>
   </section>
 
-  <!-- SKILLS -->
+  <!-- TECHNICAL SKILLS -->
   <section id="skills" class="section light fade-in">
-    <h2>My Skills</h2>
+    <h2>Technical Skills</h2>
+    <p>Explore how I use the technologies I work with to build responsive and interactive web experiences.</p>
 
-    <div class="skills-category">
-      <h3>Frontend</h3>
-      <div class="cards">
-        <div class="card">HTML5</div>
-        <div class="card">CSS3</div>
-        <div class="card">JavaScript</div>
-        <div class="card">React.js</div>
-        <div class="card">Responsive Web Design</div>
-      </div>
+    <div class="skills-grid">
+      <button class="skill-card" type="button" data-skill="html" aria-expanded="false" aria-controls="detail-html">
+        <h3>HTML5</h3>
+        <p class="skill-short">Semantic, accessible page markup.</p>
+        <span class="skill-toggle">Explore &rarr;</span>
+      </button>
+
+      <button class="skill-card" type="button" data-skill="css" aria-expanded="false" aria-controls="detail-css">
+        <h3>CSS3</h3>
+        <p class="skill-short">Responsive, consistent interface styling.</p>
+        <span class="skill-toggle">Explore &rarr;</span>
+      </button>
+
+      <button class="skill-card" type="button" data-skill="js" aria-expanded="false" aria-controls="detail-js">
+        <h3>JavaScript</h3>
+        <p class="skill-short">Interactivity and dynamic behavior.</p>
+        <span class="skill-toggle">Explore &rarr;</span>
+      </button>
+
+      <button class="skill-card" type="button" data-skill="react" aria-expanded="false" aria-controls="detail-react">
+        <h3>React.js</h3>
+        <p class="skill-short">Reusable, component-based UIs.</p>
+        <span class="skill-toggle">Explore &rarr;</span>
+      </button>
+
+      <button class="skill-card" type="button" data-skill="responsive" aria-expanded="false" aria-controls="detail-responsive">
+        <h3>Responsive Web Design</h3>
+        <p class="skill-short">Layouts that adapt to any screen.</p>
+        <span class="skill-toggle">Explore &rarr;</span>
+      </button>
+
+      <button class="skill-card" type="button" data-skill="git" aria-expanded="false" aria-controls="detail-git">
+        <h3>Git &amp; GitHub</h3>
+        <p class="skill-short">Version control and project management.</p>
+        <span class="skill-toggle">Explore &rarr;</span>
+      </button>
+
+      <button class="skill-card" type="button" data-skill="api" aria-expanded="false" aria-controls="detail-api">
+        <h3>REST APIs</h3>
+        <p class="skill-short">Connecting frontends to backend data.</p>
+        <span class="skill-toggle">Explore &rarr;</span>
+      </button>
     </div>
 
-    <div class="skills-category">
-      <h3>Tools</h3>
-      <div class="cards">
-        <div class="card">Git</div>
-        <div class="card">GitHub</div>
-      </div>
-    </div>
-
-    <div class="skills-category">
-      <h3>Other</h3>
-      <div class="cards">
-        <div class="card">REST APIs</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CODE & TECHNICAL SKILLS -->
-  <section id="code" class="section fade-in">
-    <h2>Code &amp; Technical Skills</h2>
-    <p>A closer look at how I write code, not just the tools I list.</p>
-
-    <div class="code-tabs" role="tablist" aria-label="Code example skills">
-      <button class="code-tab active" type="button" role="tab" id="tab-html" aria-selected="true" aria-controls="panel-html" data-target="html">HTML5</button>
-      <button class="code-tab" type="button" role="tab" id="tab-css" aria-selected="false" aria-controls="panel-css" data-target="css">CSS3</button>
-      <button class="code-tab" type="button" role="tab" id="tab-js" aria-selected="false" aria-controls="panel-js" data-target="js">JavaScript</button>
-      <button class="code-tab" type="button" role="tab" id="tab-react" aria-selected="false" aria-controls="panel-react" data-target="react">React.js</button>
-    </div>
-
-    <div class="code-panels">
-      <div class="code-panel code-card active" data-panel="html" id="panel-html" role="tabpanel" aria-labelledby="tab-html">
-        <div class="code-card-header">
-          <h3>Semantic HTML</h3>
-          <span class="tech-label">HTML5</span>
-        </div>
-        <p class="code-explanation">Building structured, accessible page layouts using semantic HTML5 elements.</p>
+    <div class="skill-details">
+      <div class="skill-detail-panel" data-detail="html" id="detail-html">
+        <h3>HTML5</h3>
+        <p class="skill-description">I use semantic HTML5 to create structured, accessible, and well-organized web pages.</p>
+        <h4>What I can do</h4>
+        <ul class="skill-capabilities">
+          <li>Semantic HTML structure</li>
+          <li>Forms and input elements</li>
+          <li>Accessible page structure</li>
+          <li>Clean and maintainable markup</li>
+        </ul>
         <div class="code-block-wrapper">
           <pre class="code-block"><code>&lt;header&gt;
   &lt;nav&gt;
-    &lt;a href="/"&gt;Home&lt;/a&gt;
-    &lt;a href="/projects"&gt;Projects&lt;/a&gt;
+    &lt;a href="#projects"&gt;Projects&lt;/a&gt;
   &lt;/nav&gt;
 &lt;/header&gt;</code></pre>
           <button class="copy-btn" type="button">Copy Code</button>
         </div>
       </div>
 
-      <div class="code-panel code-card" data-panel="css" id="panel-css" role="tabpanel" aria-labelledby="tab-css">
-        <div class="code-card-header">
-          <h3>Responsive CSS</h3>
-          <span class="tech-label">CSS3</span>
-        </div>
-        <p class="code-explanation">Creating responsive layouts that adapt smoothly across desktop, tablet and mobile devices.</p>
+      <div class="skill-detail-panel" data-detail="css" id="detail-css">
+        <h3>CSS3</h3>
+        <p class="skill-description">I use CSS3 to create responsive, visually consistent, and user-friendly interfaces.</p>
+        <h4>What I can do</h4>
+        <ul class="skill-capabilities">
+          <li>Responsive layouts</li>
+          <li>Flexbox</li>
+          <li>CSS Grid</li>
+          <li>Media queries</li>
+          <li>Hover and transition effects</li>
+        </ul>
         <div class="code-block-wrapper">
           <pre class="code-block"><code>.container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-}
+}</code></pre>
+          <button class="copy-btn" type="button">Copy Code</button>
+        </div>
+      </div>
 
-@media (max-width: 768px) {
+      <div class="skill-detail-panel" data-detail="js" id="detail-js">
+        <h3>JavaScript</h3>
+        <p class="skill-description">I use JavaScript to add interactivity and dynamic behavior to web interfaces.</p>
+        <h4>What I can do</h4>
+        <ul class="skill-capabilities">
+          <li>DOM manipulation</li>
+          <li>Event handling</li>
+          <li>Form validation</li>
+          <li>Array and object operations</li>
+          <li>Fetching data from APIs</li>
+        </ul>
+        <div class="code-block-wrapper">
+          <pre class="code-block"><code>button.addEventListener("click", () => {
+  console.log("Button clicked");
+});</code></pre>
+          <button class="copy-btn" type="button">Copy Code</button>
+        </div>
+      </div>
+
+      <div class="skill-detail-panel" data-detail="react" id="detail-react">
+        <h3>React.js</h3>
+        <p class="skill-description">I use React.js to build reusable, component-based user interfaces.</p>
+        <h4>What I can do</h4>
+        <ul class="skill-capabilities">
+          <li>Functional components</li>
+          <li>Props</li>
+          <li>State</li>
+          <li>Event handling</li>
+          <li>Reusable UI components</li>
+        </ul>
+        <div class="code-block-wrapper">
+          <pre class="code-block"><code>function ProjectCard({ title }) {
+  return (
+    &lt;article className="project-card"&gt;
+      &lt;h3&gt;{title}&lt;/h3&gt;
+    &lt;/article&gt;
+  );
+}</code></pre>
+          <button class="copy-btn" type="button">Copy Code</button>
+        </div>
+      </div>
+
+      <div class="skill-detail-panel" data-detail="responsive" id="detail-responsive">
+        <h3>Responsive Web Design</h3>
+        <p class="skill-description">I build websites that adapt smoothly to desktop, tablet, and mobile screen sizes.</p>
+        <h4>What I can do</h4>
+        <ul class="skill-capabilities">
+          <li>CSS Grid</li>
+          <li>Flexbox</li>
+          <li>Media queries</li>
+          <li>Mobile-friendly layouts</li>
+          <li>Responsive navigation</li>
+        </ul>
+        <div class="code-block-wrapper">
+          <pre class="code-block"><code>@media (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
   }
@@ -154,52 +224,42 @@
         </div>
       </div>
 
-      <div class="code-panel code-card" data-panel="js" id="panel-js" role="tabpanel" aria-labelledby="tab-js">
-        <div class="code-card-header">
-          <h3>JavaScript DOM Interaction</h3>
-          <span class="tech-label">JavaScript</span>
-        </div>
-        <p class="code-explanation">Using JavaScript to create interactive and dynamic user interfaces.</p>
+      <div class="skill-detail-panel" data-detail="git" id="detail-git">
+        <h3>Git &amp; GitHub</h3>
+        <p class="skill-description">I use Git and GitHub for version control and managing my development projects.</p>
+        <h4>What I can do</h4>
+        <ul class="skill-capabilities">
+          <li>Git repositories</li>
+          <li>Commits</li>
+          <li>Branches</li>
+          <li>Push and pull</li>
+          <li>GitHub project management</li>
+        </ul>
         <div class="code-block-wrapper">
-          <pre class="code-block"><code>const button = document.querySelector("#menu-button");
-
-button.addEventListener("click", () => {
-  document.querySelector("#menu").classList.toggle("active");
-});</code></pre>
+          <pre class="code-block"><code>git add .
+git commit -m "Update portfolio"
+git push</code></pre>
           <button class="copy-btn" type="button">Copy Code</button>
         </div>
       </div>
 
-      <div class="code-panel code-card" data-panel="react" id="panel-react" role="tabpanel" aria-labelledby="tab-react">
-        <div class="code-card-header">
-          <h3>React Component</h3>
-          <span class="tech-label">React.js</span>
-        </div>
-        <p class="code-explanation">Building reusable React components for scalable and maintainable user interfaces.</p>
+      <div class="skill-detail-panel" data-detail="api" id="detail-api">
+        <h3>REST APIs</h3>
+        <p class="skill-description">I understand how frontend applications communicate with backend services through REST APIs.</p>
+        <h4>What I can do</h4>
+        <ul class="skill-capabilities">
+          <li>Fetch API</li>
+          <li>GET requests</li>
+          <li>JSON data</li>
+          <li>Handling API responses</li>
+          <li>Displaying API data in the UI</li>
+        </ul>
         <div class="code-block-wrapper">
-          <pre class="code-block"><code>function ProjectCard({ title, description }) {
-  return (
-    &lt;article className="project-card"&gt;
-      &lt;h3&gt;{title}&lt;/h3&gt;
-      &lt;p&gt;{description}&lt;/p&gt;
-    &lt;/article&gt;
-  );
-}</code></pre>
+          <pre class="code-block"><code>fetch("/api/projects")
+  .then(response => response.json())
+  .then(data => console.log(data));</code></pre>
           <button class="copy-btn" type="button">Copy Code</button>
         </div>
-      </div>
-    </div>
-
-    <div class="what-i-build">
-      <h3>What I Can Build</h3>
-      <div class="build-cards">
-        <div class="build-card">Responsive websites</div>
-        <div class="build-card">Landing pages</div>
-        <div class="build-card">Portfolio websites</div>
-        <div class="build-card">Interactive web interfaces</div>
-        <div class="build-card">Reusable React components</div>
-        <div class="build-card">API-based frontend interfaces</div>
-        <div class="build-card">Mobile-friendly layouts</div>
       </div>
     </div>
   </section>
