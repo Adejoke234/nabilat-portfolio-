@@ -52,3 +52,24 @@ document.querySelectorAll('.copy-btn').forEach(btn => {
     });
   });
 });
+
+// Code & Technical Skills tabs
+const codeTabs = document.querySelectorAll('.code-tab');
+const codePanels = document.querySelectorAll('.code-panel');
+
+codeTabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = tab.dataset.target;
+
+    codeTabs.forEach(t => {
+      t.classList.remove('active');
+      t.setAttribute('aria-selected', 'false');
+    });
+    tab.classList.add('active');
+    tab.setAttribute('aria-selected', 'true');
+
+    codePanels.forEach(panel => {
+      panel.classList.toggle('active', panel.dataset.panel === target);
+    });
+  });
+});
