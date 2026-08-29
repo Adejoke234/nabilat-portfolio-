@@ -53,23 +53,25 @@ document.querySelectorAll('.copy-btn').forEach(btn => {
   });
 });
 
-// Code & Technical Skills tabs
-const codeTabs = document.querySelectorAll('.code-tab');
-const codePanels = document.querySelectorAll('.code-panel');
+// Technical Skills — expandable detail panels
+const skillCards = document.querySelectorAll('.skill-card');
+const skillPanels = document.querySelectorAll('.skill-detail-panel');
 
-codeTabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    const target = tab.dataset.target;
+skillCards.forEach(card => {
+  card.addEventListener('click', () => {
+    const target = card.dataset.skill;
+    const isCurrentlyOpen = card.classList.contains('active');
 
-    codeTabs.forEach(t => {
-      t.classList.remove('active');
-      t.setAttribute('aria-selected', 'false');
+    skillCards.forEach(c => {
+      c.classList.remove('active');
+      c.setAttribute('aria-expanded', 'false');
     });
-    tab.classList.add('active');
-    tab.setAttribute('aria-selected', 'true');
+    skillPanels.forEach(panel => panel.classList.remove('active'));
 
-    codePanels.forEach(panel => {
-      panel.classList.toggle('active', panel.dataset.panel === target);
-    });
+    if (!isCurrentlyOpen) {
+      card.classList.add('active');
+      card.setAttribute('aria-expanded', 'true');
+      document.querySelector(`.skill-detail-panel[data-detail="${target}"]`).classList.add('active');
+    }
   });
 });
