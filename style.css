@@ -218,12 +218,51 @@ body {
 }
 
 /* ========== CODE & TECHNICAL SKILLS ========== */
-.code-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+.code-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
   margin-top: 30px;
+}
+
+.code-tab {
+  padding: 10px 22px;
+  background: #e2e8f0;
+  color: #0f172a;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.code-tab:hover {
+  background: #cbd5e1;
+}
+
+.code-tab.active {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+.code-panels {
+  max-width: 700px;
+  margin: 30px auto 0;
   text-align: left;
+  position: relative;
+}
+
+.code-panel {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.code-panel.active {
+  display: block;
+  opacity: 1;
 }
 
 .code-card {
