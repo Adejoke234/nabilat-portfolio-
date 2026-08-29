@@ -107,8 +107,15 @@
     <h2>Code &amp; Technical Skills</h2>
     <p>A closer look at how I write code, not just the tools I list.</p>
 
-    <div class="code-grid">
-      <div class="code-card">
+    <div class="code-tabs" role="tablist" aria-label="Code example skills">
+      <button class="code-tab active" type="button" role="tab" id="tab-html" aria-selected="true" aria-controls="panel-html" data-target="html">HTML5</button>
+      <button class="code-tab" type="button" role="tab" id="tab-css" aria-selected="false" aria-controls="panel-css" data-target="css">CSS3</button>
+      <button class="code-tab" type="button" role="tab" id="tab-js" aria-selected="false" aria-controls="panel-js" data-target="js">JavaScript</button>
+      <button class="code-tab" type="button" role="tab" id="tab-react" aria-selected="false" aria-controls="panel-react" data-target="react">React.js</button>
+    </div>
+
+    <div class="code-panels">
+      <div class="code-panel code-card active" data-panel="html" id="panel-html" role="tabpanel" aria-labelledby="tab-html">
         <div class="code-card-header">
           <h3>Semantic HTML</h3>
           <span class="tech-label">HTML5</span>
@@ -125,7 +132,7 @@
         </div>
       </div>
 
-      <div class="code-card">
+      <div class="code-panel code-card" data-panel="css" id="panel-css" role="tabpanel" aria-labelledby="tab-css">
         <div class="code-card-header">
           <h3>Responsive CSS</h3>
           <span class="tech-label">CSS3</span>
@@ -147,7 +154,7 @@
         </div>
       </div>
 
-      <div class="code-card">
+      <div class="code-panel code-card" data-panel="js" id="panel-js" role="tabpanel" aria-labelledby="tab-js">
         <div class="code-card-header">
           <h3>JavaScript DOM Interaction</h3>
           <span class="tech-label">JavaScript</span>
@@ -163,7 +170,7 @@ button.addEventListener("click", () => {
         </div>
       </div>
 
-      <div class="code-card">
+      <div class="code-panel code-card" data-panel="react" id="panel-react" role="tabpanel" aria-labelledby="tab-react">
         <div class="code-card-header">
           <h3>React Component</h3>
           <span class="tech-label">React.js</span>
