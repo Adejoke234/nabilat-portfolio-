@@ -3,7 +3,7 @@
 A modern and responsive frontend portfolio website built using HTML, CSS, and JavaScript. This project showcases my skills, projects, and ability to build clean and user-friendly interfaces.
 
 ## 🌐 Live Demo
-👉 https://adejoke234.github.io/nabilat-portfolio/
+👉 https://adejoke234.github.io/nabilat-portfolio-/
 
 ## 📌 Features
 - Responsive design (mobile-friendly)
