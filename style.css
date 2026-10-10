@@ -533,3 +533,8 @@ body {
     font-size: 12px;
   }
 }
+.edu-note {
+  font-size: 13px;
+  color: #555;
+  margin-top: 6px;
+}
