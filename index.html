@@ -20,6 +20,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -97,6 +98,12 @@
       <button class="skill-card" type="button" data-skill="react" aria-expanded="false" aria-controls="detail-react">
         <h3>React.js</h3>
         <p class="skill-short">Reusable, component-based UIs.</p>
+        <span class="skill-toggle">Explore &rarr;</span>
+      </button>
+
+      <button class="skill-card" type="button" data-skill="tailwind" aria-expanded="false" aria-controls="detail-tailwind">
+        <h3>Tailwind CSS</h3>
+        <p class="skill-short">Fast styling with utility classes.</p>
         <span class="skill-toggle">Explore &rarr;</span>
       </button>
 
@@ -203,6 +210,24 @@
         </div>
       </div>
 
+      <div class="skill-detail-panel" data-detail="tailwind" id="detail-tailwind">
+        <h3>Tailwind CSS</h3>
+        <p class="skill-description">I use Tailwind CSS utility classes to style responsive interfaces quickly and consistently.</p>
+        <h4>What I can do</h4>
+        <ul class="skill-capabilities">
+          <li>Utility-first styling</li>
+          <li>Responsive breakpoints</li>
+          <li>Flexbox and Grid utilities</li>
+          <li>Hover and focus states</li>
+        </ul>
+        <div class="code-block-wrapper">
+          <pre class="code-block"><code>&lt;button class="rounded-lg bg-sky-500 px-4 py-2 text-white hover:bg-sky-600"&gt;
+  View My Work
+&lt;/button&gt;</code></pre>
+          <button class="copy-btn" type="button">Copy Code</button>
+        </div>
+      </div>
+
       <div class="skill-detail-panel" data-detail="responsive" id="detail-responsive">
         <h3>Responsive Web Design</h3>
         <p class="skill-description">I build websites that adapt smoothly to desktop, tablet, and mobile screen sizes.</p>
@@ -272,34 +297,91 @@ git push</code></pre>
         <h3>Software Engineering Intern (SIWES)</h3>
         <p class="exp-company">Data Quotient Technology</p>
         <p class="exp-duration">2025 &nbsp;·&nbsp; 6 months</p>
+        <ul class="exp-details">
+          <li>Completed a six-month industrial attachment in a professional software development environment, contributing to frontend development tasks and assigned features.</li>
+          <li>Worked within collaborative engineering workflows involving Git version control, code reviews and task management.</li>
+        </ul>
       </div>
       <div class="exp-item">
         <h3>Frontend Developer Intern</h3>
         <p class="exp-company">Tripledot Technology</p>
         <p class="exp-duration">2024 &nbsp;·&nbsp; 6 weeks</p>
+        <ul class="exp-details">
+          <li>Built and styled responsive UI components using HTML, CSS and JavaScript, translating design mockups into functional cross-browser web pages.</li>
+          <li>Collaborated with teammates to maintain UI consistency and improve interface quality across multiple pages.</li>
+        </ul>
       </div>
       <div class="exp-item">
         <h3>Software Developer Intern</h3>
         <p class="exp-company">Madros Technology</p>
         <p class="exp-duration">2023 &nbsp;·&nbsp; 3 months</p>
+        <ul class="exp-details">
+          <li>Developed and maintained web pages as part of a small development team and gained hands-on experience using Git in a collaborative workflow.</li>
+          <li>Contributed clean, standards-compliant frontend code and supported assigned development tasks.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section light fade-in">
+    <h2>Education &amp; Certifications</h2>
+    <div class="experience-list">
+      <div class="exp-item">
+        <h3>B.Sc. Software Engineering</h3>
+        <p class="exp-company">Osun State University (UNIOSUN), Nigeria</p>
+        <p class="exp-duration">2022 &nbsp;·&nbsp; 2026</p>
+        <p class="edu-note">Relevant coursework: Data Structures, Software Design, Web Technologies, Databases, Human-Computer Interaction</p>
+      </div>
+      <div class="exp-item">
+        <h3>Frontend Engineering</h3>
+        <p class="exp-company">Data Quotient</p>
+        <p class="exp-duration">Certificate of Completion, September 2025</p>
+      </div>
+      <div class="exp-item">
+        <h3>Graduate Registration (GMCPN)</h3>
+        <p class="exp-company">Computer Professionals (Registration Council of Nigeria)</p>
+        <p class="exp-duration">September 2026 &nbsp;·&nbsp; September 2028</p>
+      </div>
+      <div class="exp-item">
+        <h3>Employability Skills Training</h3>
+        <p class="exp-company">Jobberman Nigeria / Mastercard Foundation</p>
+        <p class="exp-duration">Certificate of Attendance</p>
       </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="section light fade-in">
+  <section id="projects" class="section fade-in">
     <h2>Projects</h2>
     <div class="project-grid">
 
       <div class="project-card">
         <h3>Plagiarism Detection System</h3>
-        <p>
-          Final-year project focused on detecting similarities in Python source code, including
-          obfuscated code, using NLP techniques and Abstract Syntax Tree (AST) analysis.
-        </p>
+        <p>Final-year project focused on detecting similarities in Python source code, including obfuscated code, using NLP techniques and Abstract Syntax Tree (AST) analysis.</p>
         <p class="project-tech">React.js &nbsp;·&nbsp; Python &nbsp;·&nbsp; Flask &nbsp;·&nbsp; NLP &nbsp;·&nbsp; AST</p>
         <div class="project-buttons">
           <span class="project-note">Links coming soon</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>16 Frontend Mini Projects</h3>
+        <p>A collection of 16 small apps: to-do list, currency converter, expense tracker, password generator, recipe finder and more. All in one place.</p>
+        <p class="project-tech">HTML5 &nbsp;·&nbsp; CSS3 &nbsp;·&nbsp; JavaScript &nbsp;·&nbsp; APIs</p>
+        <div class="project-buttons">
+          <a href="https://adejoke234.github.io/frontend-mini-projects/" target="_blank" rel="noopener" class="project-btn">View All Projects</a>
+          <a href="https://github.com/Adejoke234/frontend-mini-projects" target="_blank" rel="noopener" class="project-btn secondary-btn">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Quiz Game</h3>
+        <p>Timed quiz with 20 shuffled questions, easy, medium and hard levels, a 15 second timer per question and saved best scores.</p>
+        <p class="project-tech">HTML5 &nbsp;·&nbsp; CSS3 &nbsp;·&nbsp; JavaScript &nbsp;·&nbsp; localStorage</p>
+        <div class="project-buttons">
+          <a href="https://adejoke234.github.io/frontend-mini-projects/quiz-game/" target="_blank" rel="noopener" class="project-btn">Live Demo</a>
+          <a href="https://github.com/Adejoke234/frontend-mini-projects/tree/main/quiz-game" target="_blank" rel="noopener" class="project-btn secondary-btn">GitHub</a>
         </div>
       </div>
 
