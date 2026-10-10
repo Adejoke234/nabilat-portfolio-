@@ -538,3 +538,60 @@ body {
   color: #555;
   margin-top: 6px;
 }
+
+.section-intro {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* ========== SIMPLE CARD ANIMATIONS ========== */
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in.show .project-card,
+.fade-in.show .skill-card,
+.fade-in.show .exp-item,
+.fade-in.show .highlight-box {
+  animation: cardIn 0.6s ease backwards;
+}
+
+.fade-in.show .project-card:nth-child(2),
+.fade-in.show .skill-card:nth-child(2),
+.fade-in.show .exp-item:nth-child(2),
+.fade-in.show .highlight-box:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.fade-in.show .project-card:nth-child(3),
+.fade-in.show .skill-card:nth-child(3),
+.fade-in.show .exp-item:nth-child(3),
+.fade-in.show .highlight-box:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.fade-in.show .skill-card:nth-child(n+4),
+.fade-in.show .exp-item:nth-child(n+4) {
+  animation-delay: 0.4s;
+}
+
+.project-btn:active,
+.btn:active {
+  transform: scale(0.97);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in.show .project-card,
+  .fade-in.show .skill-card,
+  .fade-in.show .exp-item,
+  .fade-in.show .highlight-box {
+    animation: none;
+  }
+}
